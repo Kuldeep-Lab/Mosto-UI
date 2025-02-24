@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosto-UI</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS animation link -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- jost google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-indigo-50">
+
+    <!-- 1st section -->
+    <section id="first-section" class="bg-fixed">
+
+         <header class="">
+            <nav class=" bg-transparent backdrop-blur-sm shadow-lg z-50">
+                <div class=" mx-auto px-3 sm:px-6 lg:px-5">
+                    <div class="flex items-center lg:px-20 justify-between h-16">
+                        <div class="flex items-center">
+                             
+                             <img src="images/footer-logo.png" alt="logo">
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-10 flex items-baseline  py-4 space-x-12">
+                                <a href="#"
+                                    class="text-white hover:text-sky-400 google-font font-semibold lg:text-xl">Home</a>
+                                <a href="#"
+                                    class="text-white hover:text-sky-400 google-font font-semibold lg:text-xl">Feature</a>
+                                <a href="#"
+                                    class="text-white hover:text-sky-400 google-font font-semibold lg:text-xl">Pages</a>
+                                <a href="#"
+                                    class="text-white hover:text-sky-400 google-font font-semibold lg:text-xl">FAQ</a>
+                                <a href="#"
+                                    class="text-white hover:text-sky-400 google-font font-semibold lg:text-xl">Blogs</a>
+                                <a href="#"
+                                    class="text-white hover:text-sky-400 google-font font-semibold lg:text-xl">Contact</a>
+                                <button
+                                    class="px-4 py-2 text-white rounded-full bg-transparent text-md border-2 border-gray-500 hover:border-white">Get
+                                    Mosto</button>
+                            </div>
+                        </div>
+                        <div class="mr-2 flex md:hidden">
+                            <button id="menu-button"
+                                class="bg-gray-700 inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-600 focus:ring-white">
+                                <span class="sr-only">Open main menu</span>
+                                <svg id="menu-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                        d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+                  <!-- mobile size -->
+                 <div id="mobile-menu" class="hidden md:hidden bg-transparent backdrop-blur-sm shadow-lg z-50">
+                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <a href="#"
+                            class="text-gray-800 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-300">Home</a>
+                        <a href="#"
+                            class="text-gray-800 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-300">Feature</a>
+                        <a href="#"
+                            class="text-gray-800 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-300">Pages</a>
+                        <a href="#"
+                            class="text-gray-800 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-300">FAQ</a>
+                        <a href="#"
+                            class="text-gray-800 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-300">Blogs</a>
+                        <a href="#"
+                            class="text-gray-800 block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-300">Contact</a>
+
+                            <button
+                                    class="px-4 py-2 text-gray-800 rounded-full bg-transparent text-md border-2 border-gray-500 hover:border-white">Get
+                                    Mosto</button>
+                    </div>
+                </div>
+            </nav>
+         </header>  
+
+        <!-- landing page -->
+        <div class="grid grid-cols-1 lg:grid-cols-7 mt-20">
+
+            <!-- {/* First Column */} -->
+            <div class="col-span-3 items-center lg:pl-20">
+                <div class="lg:mt-32 ">
+                    <h1
+                        class="lg:text-7xl google-font text-5xl px-4 font-bold py-3 text-transparent bg-clip-text bg-gradient-to-l from-white via-violet-600 to-indigo-700 ">
+                        More than just messaging</h1>
+
+                    <p
+                        class="font-semibold mt-3 text-lg lg:text-xl px-4 text-transparent bg-clip-text bg-gradient-to-l from-white via-violet-600 to-indigo-700 ">
+                        A business conversation hub, connecting your business to your customers, employees, and
+                        processes through smart instant messaging.
+                    </p>
+                </div>
+
+                <div class='mt-5 px-3 lg:px-4'>
+                    <input id="email" type="email" name='email' placeholder='Enter your email'
+                        class=" w-55 lg:w-72 rounded-full border-2 border-gray-200 bg-transparent px-4 py-3 lg:px-5 lg:py-4  placeholder:text-lg text-base text-gray-800 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+
+                    <button
+                        class="px-4 py-3 text-white font-semibold lg:text-lg rounded-full shadow-2xl bg-transparent bg-clip bg-gradient-to-l from-purple-600 via-indigo-600 to-blue-600">
+                        Get Mosto
+                    </button>
+
+                </div>
+
+                <p
+                    class="font-semibold mt-4 text-md lg:text-xl px-4 text-transparent bg-clip-text bg-gradient-to-l from-white via-purple-500 to-indigo-700 ">
+                    2836 teams moved to mosto this week.
+                </p>
+
+
+            </div>
+
+            <!-- {/* second Column */} -->
+
+            <div class="hidden sm:block md:block col-span-4 mt-10 flex justify-center items-center">
+                <div class="mt-5  px-4">
+                    <img class=" w-screen" src="images/banner-5.png" alt="front-img">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2nd section  -->
+    <section class="lg:mt-40 mt-20 bg-picture-right">
+        <div class="mt-20" data-aos="zoom-in-up">
+            <h3 class="text-orange-400 font-semibold text-center lg:text-2xl text-md"> Amazing features to convince you
+            </h3>
+            <h1 class="lg:text-6xl google-font text-3xl text-indigo-900 text-center tracking-wide font-bold py-3 px-4">
+                Mosto makes
+                communication & <span class="block lg:py-2">collaboration effortless</span> </h1>
+            <p class="text-center text-indigo-900 lg:text-lg text-md px-4">Get all the features you need in one
+                easy-to-use tool</p>
+        </div>
+
+        <div class="mt-20 bg-picture-right">
+
+            <!-- icon buttons-->
+            <ul id="buttonSection" class="flex justify-center flex-wrap ">
+
+                <!-- 1st button -->
+                <li class="pr-7 lg:px-10" data-aos="fade-right">
+                    <button class="text-blue-500 py-2 border-b-2 border-blue-500 focus:outline-none" id="item-one-tab"
+                        data-tab="item-one">
+                        <span
+                            class="inline-block p-4 shadow-xl shadow-red-400 rounded-full bg-transparent bg-clip bg-gradient-to-b from-pink-500 to-orange-300">
+                            <i class="fa-regular fa-message text-white fa-xl"></i>
+                        </span>
+                        <span class="block lg:text-md font-semibold mt-4">Instant conversations</span>
+                    </button>
+                </li>
+
+                <!-- 2nd button -->
+                <li class="pr-3 lg:px-10" data-aos="fade-up">
+                    <button class=" px-4 py-2 text-gray-500  hover:text-blue-500  focus:outline-none" id="item-two-tab"
+                        data-tab="item-two">
+                        <span
+                            class="inline-block p-4 shadow-xl shadow-orange-400 rounded-full bg-transparent bg-clip bg-gradient-to-b from-red-400 to-yellow-200">
+                            <i class="fa-solid fa-video text-white fa-xl"></i>
+                        </span>
+                        <span class="block lg:text-md font-semibold mt-4">Video calls</span>
+                    </button>
+                </li>
+
+                <!-- 3rd button -->
+                <li class="lg:px-10" data-aos="fade">
+                    <button class=" px-4 py-2 text-gray-500 hover:text-blue-500 focus:outline-none" id="item-three-tab"
+                        data-tab="item-three">
+                        <span
+                            class="inline-block p-4 shadow-xl shadow-indigo-400 rounded-full bg-transparent bg-clip bg-gradient-to-b from-blue-400 to-indigo-200">
+                            <i class="fa-solid fa-magnifying-glass text-white fa-xl"></i>
+                        </span>
+                        <span class="block lg:text-md font-semibold mt-4">Powerful Search</span>
+                    </button>
+                </li>
+
+                <!-- 4th button -->
+                <li class="lg:px-10" data-aos="fade-down">
+                    <button class="px-4 py-2 text-gray-500  hover:text-blue-500 focus:outline-none" id="item-four-tab"
+                        data-tab="item-four">
+                        <span
+                            class="inline-block p-4 shadow-xl shadow-emerald-400 rounded-full bg-transparent bg-clip bg-gradient-to-b from-green-400 to-emerald-200">
+                            <i class="fa-solid fa-screwdriver-wrench text-white fa-xl"></i>
+                        </span>
+                        <span class="block lg:text-md font-semibold mt-4">Productivity Tools</span>
+                    </button>
+                </li>
+
+                <!-- 5th button -->
+                <li class="lg:px-10" data-aos="fade-left">
+                    <button class=" px-4 py-2 text-gray-500 hover:text-blue-500 focus:outline-none" id="item-five-tab"
+                        data-tab="item-five">
+                        <span
+                            class="inline-block p-4 shadow-xl shadow-sky-400 rounded-full bg-transparent bg-clip bg-gradient-to-b from-sky-400 to-cyan-300">
+                            <i class="fa-solid fa-layer-group text-white fa-xl"></i>
+                        </span>
+                        <span class="block lg:text-md font-semibold mt-4">App integrations</span>
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab content -->
+            <div id="tabContant" class="px-10 mt-20" data-aos="fade-up">
+
+                <!-- 1st tab -->
+                <div id="item-one" class="tab-content active lg:ml-20">
+                    <div class="flex flex-wrap-reverse items-center">
+
+                        <div class="w-full py-4 md:w-1/2 lg:w-1/3">
+                            <h3 class="lg:text-5xl text-indigo-900 text-2xl font-semibold">Bring your team together</h3>
+                            <p class="text-gray-500 py-2 lg:mt-5 lg:text-lg">Get access to everyone in your organization
+                                with customizable channels and a team directory.</p>
+                            <button
+                                class="text-blue-500 mt-3 px-4 py-3 rounded-full border-2 border-gray-300 hover:shadow-2xl hover:shadow-blue-400 hover:border-blue-300 font-semibold">
+                                Get Free Trial
+                                <i class="fa-solid ml-2 fa-lg fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="w-full lg:pl-20 md:w-1/2 lg:w-2/3">
+                            <img src="images/cf1.png" alt="feature" class="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd tab -->
+                <div id="item-two" class="tab-content hidden lg:ml-20">
+                    <div class="flex flex-wrap-reverse items-center">
+
+                        <div class="w-full py-4 md:w-1/2 lg:w-1/3">
+                            <h3 class="lg:text-5xl text-indigo-900 text-2xl font-semibold">Make video calls with one
+                                click</h3>
+                            <p class="text-gray-500 py-2 lg:mt-5 lg:text-lg">Stay connected with Mosto's powerful
+                                inbuilt video conference feature.</p>
+                            <button
+                                class="text-blue-500 mt-3 px-4 py-3 rounded-full border-2 border-gray-300 hover:shadow-2xl hover:shadow-blue-400 hover:border-blue-300 font-semibold">
+                                Get Free Trial
+                                <i class="fa-solid ml-2 fa-lg fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="w-full lg:pl-20 md:w-1/2 lg:w-2/3">
+                            <img src="images/cf2.png" alt="feature" class="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd tab -->
+                <div id="item-three" class="tab-content hidden lg:ml-20">
+                    <div class="flex flex-wrap-reverse items-center">
+
+                        <div class="w-full py-4 md:w-1/2 lg:w-1/3">
+                            <h3 class="lg:text-5xl text-indigo-900 text-2xl font-semibold">Easily find and share
+                                information</h3>
+                            <p class="text-gray-500 py-2 lg:mt-5 lg:text-lg">Powerful search helps you find anything
+                                shared in Mosto, whether it’s a message, file, or link. </p>
+                            <button
+                                class="text-blue-500 mt-3 px-4 py-3 rounded-full border-2 border-gray-300 hover:shadow-2xl hover:shadow-blue-400 hover:border-blue-300 font-semibold">
+                                Get Free Trial
+                                <i class="fa-solid ml-2 fa-lg fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="w-full lg:pl-20 md:w-1/2 lg:w-2/3">
+                            <img src="images/cf3.png" alt="feature" class="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4th tab -->
+                <div id="item-four" class="tab-content hidden lg:ml-20">
+                    <div class="flex flex-wrap-reverse items-center">
+
+                        <div class="w-full py-4 md:w-1/2 lg:w-1/3">
+                            <h3 class="lg:text-5xl text-indigo-900 text-2xl font-semibold">Stay on track with apps</h3>
+                            <p class="text-gray-500 py-2 lg:mt-5 lg:text-lg">Use our powerful suite of business
+                                collaboration tools - Shared To-Dos, Polls, Note Sharing, Reminders, and more to
+                                optimize project management.</p>
+                            <button
+                                class="text-blue-500 mt-3 px-4 py-3 rounded-full border-2 border-gray-300 hover:shadow-2xl hover:shadow-blue-400 hover:border-blue-300 font-semibold">
+                                Get Free Trial
+                                <i class="fa-solid ml-2 fa-lg fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="w-full lg:pl-20 md:w-1/2 lg:w-2/3">
+                            <img src="images/cf4.png" alt="feature" class="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5th tab -->
+                <div id="item-five" class="tab-content hidden lg:ml-20">
+                    <div class="flex flex-wrap-reverse items-center">
+
+                        <div class="w-full py-4 md:w-1/2 lg:w-1/3">
+                            <h3 class="lg:text-5xl text-indigo-900 text-2xl font-semibold">Integrate your favorite tools
+                            </h3>
+                            <p class="text-gray-500 py-2 lg:mt-5 lg:text-lg">Mosto offers over 50 integrations with
+                                tools like Asana, Twitter, Googe Drive, and Todoist. Add your apps in mosto with one
+                                click and you’ll never need to switch tools to get work done.</p>
+                            <button
+                                class="text-blue-500 mt-3 px-4 py-3 rounded-full border-2 border-gray-300 hover:shadow-2xl hover:shadow-blue-400 hover:border-blue-300 font-semibold">
+                                Get Free Trial
+                                <i class="fa-solid ml-2 fa-lg fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="w-full lg:pl-20 md:w-1/2 lg:w-2/3">
+                            <img src="images/cf5.png" alt="feature" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- this is count area -->
+        <div class="mt-10 flex items-center justify-center h-60" data-aos="zoom-in-up">
+            <div class="px-4">
+                <div class="bg-white shadow-lg rounded-3xl py-10 text-center">
+                    <div class="grid grid-cols-2   md:grid-cols-4 gap-6">
+
+                        <div class="counter-item lg:px-24 px-10 border-r-2 border-gray-300">
+                            <h2 class="lg:text-6xl text-3xl font-bold text-indigo-800"><span class="counter"
+                                    data-target="45">0</span>k</h2>
+                            <p class="text-gray-500 lg:text-lg text-sm  mt-2">Users</p>
+                        </div>
+
+                        <div class="counter-item lg:px-24 px-10 lg:border-r-2 border-gray-300">
+                            <h2 class="lg:text-6xl text-3xl font-bold text-indigo-800"><span class="counter"
+                                    data-target="90">0</span>+</h2>
+                            <p class="text-gray-500 lg:text-lg text-sm  mt-2">Countries</p>
+                        </div>
+
+                        <div class="counter-item lg:px-24 px-10 border-r-2 border-gray-300">
+                            <h2 class="lg:text-6xl text-3xl font-bold text-indigo-800"><span class="counter"
+                                    data-target="10">0</span>+</h2>
+                            <p class="text-gray-500 lg:text-lg text-sm  mt-2">Integrations</p>
+                        </div>
+
+                        <div class="counter-item lg:px-24 px-10">
+                            <h2 class="lg:text-6xl text-3xl font-bold text-indigo-800"><span class="counter"
+                                    data-target="95">0</span>%</h2>
+                            <p class="text-gray-500 lg:text-lg text-sm  mt-2">Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 3rd section -->
+    <section class="lg:mt-40 mt-20  bg-picture-right" data-aos="fade">
+        <div class="mt-20 lg:w-2/3 lg:ml-60" data-aos="fade-up">
+            <h3 class="text-orange-400 font-semibold text-center lg:text-2xl text-md"> Easy and safe Reliable messaging
+            </h3>
+            <h1 class="lg:text-6xl google-font text-3xl text-indigo-800 text-center tracking-wide font-bold py-2 px-4">
+                See how
+                Mosto can help </h1>
+            <p class="text-center mt-3 w-full text-indigo-900 lg:text-lg text-md px-4">Organizes all your conversations,
+                productivity tools, and apps in one place. Because it’s not just the message, it’s how you work together
+                that matters.</p>
+        </div>
+
+        <div class="flex justify-center mt-10 px-4 bg-picture-left" data-aos="zoom-in-up">
+
+            <img src="images/reliable-video.jpg" class="ml-10 bg-picture-left" alt="img">
+
+            <span class=" relative lg:right-1/3 lg:top-56 right-52 top-20 animate-pulse">
+                <i class="fa-solid fa-circle-play lg:text-6xl text-4xl text-blue-500"></i>
+            </span>
+        </div>
+    </section>
+
+    <!-- 4th section -->
+    <section class="lg:mt-40 mt-20 ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 bg-picture-left">
+
+            <!-- 1st coloumn -->
+            <div class="flex justify-center px-4 " data-aos="zoom-in-up">
+                <img src="images/data1.png" alt="img">
+            </div>
+
+            <!-- 2nd coloumn -->
+            <div class=" mt-2" data-aos="fade-up">
+                <div class="lg:mt-12 mt-10">
+                    <h3 class="text-orange-400 font-semibold lg:text-2xl text-md px-4"> Real Time Data </h3>
+                    <h1 class="lg:text-5xl google-font text-3xl text-indigo-800 text-left font-bold py-3 px-4 lg:pr-20">
+                        Analytics
+                        To Optimize Your Messaging Funnel </h1>
+                    <p class=" text-indigo-600 mt-2 lg:text-lg text-md px-4">Get real-time analytics that shows you your
+                        true chat volume, the time and days you’re busiest, your team’s engagement progress and more.
+                    </p>
+                </div>
+
+
+                <div class="grid grid-cols-2 text-indigo-800 font-semibold lg:pl-3  pt-5">
+                    <li class="pl-4">Actionable Analytics</li>
+                    <li class="pl-4">Real-time Updates</li>
+                    <li class="pl-4">Monitor Engagement</li>
+                    <li class="pl-4">Import and Export</li>
+                </div>
+
+                <button
+                    class="text-blue-500 px-5 py-3 ml-5 lg:mt-5 mt-4 rounded-full border-2 border-gray-300 hover:shadow-2xl hover:shadow-blue-400 hover:border-blue-300 font-semibold">
+                    Get Free Trial
+                    <i class="fa-solid ml-2 fa-lg fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5th -->
+    <section class="lg:mt-40 mt-20 fifth-section-img">
+        <div class="mt-20 lg:w-2/3  lg:ml-60" data-aos="fade-up">
+            <h3 class="text-orange-400 font-semibold text-center lg:text-2xl text-md"> Testimonials</h3>
+            <h1 class="lg:text-6xl google-font text-3xl text-indigo-800 text-center tracking-wide font-bold py-3 px-4">
+                5000+ happy
+                clients all <span class="block lg:py-4">around the world</span> </h1>
+        </div>
+
+        <!-- slider area -->
+        <div class="bg-transparent flex items-center justify-center px-4" data-aos="zoom-in-up">
+            <div class="relative w-full max-w-7xl rounded-3xl py-3 overflow-hidden">
+                <!-- Carousel Container -->
+                <div id="carousel" class="flex transition-transform rounded-3xl duration-700 ease-in-out">
+
+                    <!-- Slide 1 -->
+                    <div class="min-w-full relative rounded-3xl">
+                        <img src="images/feature-bg.png" class="w-full lg:h-96 h-72 rounded-3xl object-cover"
+                            alt="Slide 1">
+
+                        <div
+                            class="absolute inset-0 flex items-center rounded-3xl justify-center bg-black bg-opacity-25 text-white lg:text-2xl px-4 text-md font-semibold">
+                            <div class="">
+                                <img src="images/client1.jpg" alt="img" class="w-20 h-20  rounded-full my-5 mx-auto">
+                                <p class="text-center lg:px-60"> Awesome product. The guys have put huge effort into
+                                    this app and focused on simplicity and ease of use.</p>
+                                <div class="lg:mx-96">
+                                    <button
+                                        class="px-4 py-3 ml-28  lg:ml-44 text-sm rounded-full my-5 text-white bg-transparent border-2 border-gray-200  hover:bg-white hover:text-blue-500 hover:border-sky-500">
+                                        Get in touch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="min-w-full relative rounded-3xl">
+                        <img src="images/new.webp" class="w-full lg:h-96 h-72 rounded-3xl object-cover" alt="Slide 2">
+
+                        <div
+                            class="absolute inset-0 flex items-center rounded-3xl justify-center bg-black bg-opacity-15 text-white lg:text-2xl px-4 text-md font-semibold">
+                            <div class="">
+                                <img src="images/client1.jpg" alt="img" class="w-20 h-20  rounded-full my-5 mx-auto">
+                                <p class="text-center lg:px-60"> Awesome product. The guys have put huge effort into
+                                    this app and focused on simplicity and ease of use.</p>
+                                <div class="lg:mx-96">
+                                    <button
+                                        class="px-4 py-3 ml-28  lg:ml-44 text-sm rounded-full my-5 text-white bg-transparent border-2 border-gray-200  hover:bg-white hover:text-blue-500 hover:border-sky-500">
+                                        Get in touch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="min-w-full relative rounded-3xl">
+                        <img src="images/feature-tab.png"
+                            class="w-full max-w-screen lg:h-96 h-72 rounded-3xl object-cover" alt="Slide 3">
+
+                        <div
+                            class="absolute inset-0 flex items-center rounded-3xl justify-center bg-black bg-opacity-25 text-white lg:text-2xl px-4 text-md font-semibold">
+                            <div class="">
+                                <img src="images/client1.jpg" alt="img" class="w-20 h-20  rounded-full my-5 mx-auto">
+                                <p class="text-center lg:px-60"> Awesome product. The guys have put huge effort into
+                                    this app and focused on simplicity and ease of use.</p>
+                                <div class="lg:mx-96">
+                                    <button
+                                        class="px-4 py-3 ml-28  lg:ml-44 text-sm rounded-full my-5 text-white bg-transparent border-2 border-gray-200  hover:bg-white hover:text-blue-500 hover:border-sky-500">
+                                        Get in touch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button id="prev"
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">❮</button>
+                <button id="next"
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 6th -->
+    <section class="lg:mt-40 mt-20 bg-picture-right ">
+
+        <div class="mt-20 lg:w-2/3 lg:ml-60" data-aos="zoom-in-up">
+            <h1 class="lg:text-6xl google-font text-3xl text-indigo-800 text-center tracking-wide font-bold py-3 px-4">
+                Frequently
+                Asked Questions </h1>
+        </div>
+
+        <!-- FAQ area -->
+        <div class="bg-gray-100 mt-10 p-6 bg-transparent" data-aos="fade-up">
+            <div class="max-w-4xl mx-auto bg-transparent">
+                <div class="">
+
+                    <!-- Accordion Item 1 -->
+                    <div class="border rounded-lg bg-transparent border border-gray-300 overflow-hidden">
+                        <button
+                            class="w-full p-4 bg-transparent text-gray-800 text-left font-semibold flex justify-between items-center"
+                            onclick="toggleAccordion(1)">
+                            How does Mosto differ from usual apps?
+                            <span class="transform transition-transform duration-300" id="icon-1">&#9660;</span>
+                        </button>
+                        <div class="p-4  text-gray-600 bg-transparent hidden" id="content-1">
+                            Both the Mobile Apps and the Web App give you the ability to you to access your account
+                            information, view news releases, report an outage, and contact us via email or phone.
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="border rounded-lg border border-gray-300 overflow-hidden">
+                        <button
+                            class="w-full p-4 bg-transparent text-gray-800 text-left font-semibold flex justify-between items-center"
+                            onclick="toggleAccordion(2)">
+                            Is the Web App Secure?
+                            <span class="transform transition-transform duration-300" id="icon-2">&#9660;</span>
+                        </button>
+                        <div class="p-4 bg-transparent text-gray-600 hidden" id="content-2">
+                            Web application security is the process of protecting websites and online services against
+                            different security threats that exploit vulnerabilities in an application’s code.
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <button
+                            class="w-full p-4 bg-transparent text-gray-800 text-left font-semibold flex justify-between items-center"
+                            onclick="toggleAccordion(3)">
+                            How do I get the Mobile App for my phone?
+                            <span class="transform transition-transform duration-300" id="icon-3">&#9660;</span>
+                        </button>
+                        <div class="p-4 bg-transparent text-gray-600 hidden" id="content-3">
+                            Both the Mobile Apps and the Web App give you the ability to you to access your account
+                            information, view news releases, report an outage, and contact us via email or phone.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- last section -->
+    <section class="lg:mt-40 mt-20" data-aos="zoom-in-up">
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:mx-32 mx-4 rounded-3xl mt-10 last-bg-picture">
+
+            <!-- {/* First Column */} -->
+            <div class=" items-center bg-picture-second bg-fixed">
+                <div class="p-10">
+                    <h1 class="lg:text-5xl google-font text-2xl px-4 font-semibold py-3 text-white ">
+                        Start your 30 days free trials today!</h1>
+
+                    <p class="font-semibold mt-3 text-md lg:text-xl px-4 text-white ">
+                        We have provided 30 Days Money Back
+                        Guarantee in case of dissatisfaction with our product.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- {/* second Column */} -->
+
+            <div class=" lg:mt-10 flex py-5 justify-center items-center bg-small-img bg-picture-second  ">
+                <button
+                    class="px-8 py-3 text-end text-white hover:bg-white hover:text-blue-500 hover: hover:border-blue-500 font-semibold lg:text-lg rounded-full shadow-2xl bg-transparent border-2 border-white">
+                    Get Free Trial
+                    <i class="fa-solid ml-2 fa-lg fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer area -->
+    <section class="bg-gray-100 lg:mt-40 mt-20">
+        <footer class="bg-white text-gray-800 py-12" data-aos="fade-up">
+            <div class=" grid grid-cols-1 lg:grid-cols-4 gap-8 lg:px-32 px-6">
+                <div>
+                    <h2 class="text-3xl text-indigo-800 google-font font-bold mb-4">Company</h2>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600">Careers</a></li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600">Press</a></li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl text-indigo-800 google-font font-bold mb-4">Explore</h2>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600">Help Center</a></li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl text-indigo-800 google-font font-bold mb-4">Connect</h2>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600"> <i
+                                    class="fa-brands text-blue-800 mr-2 fa-facebook-f"></i> Facebook </a> </li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600"> <i
+                                    class="fa-brands fa-twitter mr-1 text-blue-500 "></i> Twitter </a> </li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600"> <i
+                                    class="fa-brands fa-linkedin-in mr-1.5 text-blue-500 "></i> LinkedIn </a> </li>
+                        <li><a href="#" class="hover:text-gray-400 font-semibold text-gray-600"> <i
+                                    class="fa-brands fa-instagram text-xl mr-1.5 font-bold text-transparent bg-clip-text bg-gradient-to-l from-orange-500 via-pink-400 to-indigo-600 "></i>
+                                Instagram </a> </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl text-indigo-800 google-font font-bold mb-4">Newsletter</h2>
+                    <p class="mb-4 font-semibold text-gray-600">Stay updated with our latest news and offers.</p>
+                    <form id="newsletterForm" class="flex space-x-2 border-2 border-gray-300 rounded-xl">
+                        <input type="email" id="email" class="w-full p-2 rounded-lg text-gray-900"
+                            placeholder="Your email address" required />
+                        <button type="submit"
+                            class="font-semibold bg-transparent bg-clip bg-gradient-to-l from-purple-600 via-indigo-600 to-blue-600 text-white px-4 py-2 rounded-full shadow-lg shadow-blue-300">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p id="successMessage" class="hidden text-blue-400 mt-2">Thank you for subscribing!</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-10 pt-5 text-center">
+                <p class="font-semibold text-gray-600">&copy; 2025 Kuldeep Singh Sisodiya. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- coustome js file -->
+    <script src="script.js"></script>
+
+    <!-- AOS js link -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 150,
+            mirror: false,
+        });
+    </script>
+</body>
+
+</html>

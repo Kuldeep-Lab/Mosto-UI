@@ -1,0 +1,56 @@
+#first-section {
+    background-image: url(images/banner-shape-5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.google-font {
+    font-family: "Jost", serif;
+}
+
+.bg-picture-right {
+    background-image: url(images/balls.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-picture-second {
+    background-image: url(images/pricing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-picture-left {
+    background-image: url(images/balls-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fifth-section-img {
+    background-image: url(images/addon-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.last-bg-picture {
+    background-image: url(images/feature-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 640px) {
+
+    #first-section {
+        background-image: url(images/banner-shape-5.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 75vh;
+    }
+
+    .bg-small-img {
+        background-image: url(images/pricing.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
